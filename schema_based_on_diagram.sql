@@ -13,24 +13,7 @@ CREATE TABLE medical_histories (
     status VARCHAR(255)
 );
 
--- Create invoices table
-CREATE TABLE invoices (
-    id SERIAL PRIMARY KEY,
-    total_amount DECIMAL,
-    generated_at TIMESTAMP,
-    payed_at TIMESTAMP,
-    medical_history_id INT REFERENCES medical_histories(id)
-);
-
--- Create invoice_items table
-CREATE TABLE invoice_items (
-    id SERIAL PRIMARY KEY,
-    unit_price DECIMAL,
-    quantity INT,
-    total_price DECIMAL,
-    invoice_id INT REFERENCES invoices(id),
-    treatment_id INT REFERENCES treatments(id)
-);
+CREATE INDEX ON medical_histories(patient_id)
 
 -- Create treatments table
 CREATE TABLE treatments (
@@ -45,3 +28,30 @@ CREATE TABLE medical_history_treatments (
     treatment_id INT REFERENCES treatments(id),
     PRIMARY KEY (medical_history_id, treatment_id)
 );
+
+CREATE INDEX ON medical_history_treatments(medical_history_id);
+CREATE INDEX ON medical_history_treatments(treatment_id)
+
+-- Create invoices table
+CREATE TABLE invoices (
+    id SERIAL PRIMARY KEY,
+    total_amount DECIMAL,
+    generated_at TIMESTAMP,
+    payed_at TIMESTAMP,
+    medical_history_id INT REFERENCES medical_histories(id)
+);
+
+CREATE INDEX ON invoices(medical_history_id);
+
+-- Create invoice_items table
+CREATE TABLE invoice_items (
+    id SERIAL PRIMARY KEY,
+    unit_price DECIMAL,
+    quantity INT,
+    total_price DECIMAL,
+    invoice_id INT REFERENCES invoices(id),
+    treatment_id INT REFERENCES treatments(id)
+);
+
+CREATE INDEX ON invoice_items(invoice_id);
+CREATE INDEX ON invoices(treatment_id);
