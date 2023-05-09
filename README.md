@@ -124,8 +124,7 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Database_Table_Optimization]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[populate_tables_with data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
