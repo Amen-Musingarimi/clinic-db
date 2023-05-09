@@ -50,7 +50,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ### Key Features <a name="key-features"></a>
 
 - **[The project has a database of a clinic]**
-- **[The database comprises tables that include medical_history, patients, treatments, invoices, and invoice_items ]**
+- **[The database comprises tables that include medical_history, patients, treatments, invoices and invoice_items]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,8 +122,6 @@ Example command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Database_Table_Optimization]**
 - [ ] **[new_feature_2]**
