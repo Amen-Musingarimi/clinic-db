@@ -2,50 +2,24 @@
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Use [schema file](schema_based_on_diagram.sql) to create all tables.
+  **Important note: this file might include queries that make changes in the database (e.g., CREATE INDEX). Use them responsibly!**
 
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[VET CLINIC\] ](#-vet-clinic-)
+- [📖 \[clinic-db\] ](#-clinic-db-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -56,17 +30,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [VET CLINIC] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
+# 📖 [clinic-db] <a name="about-project"></a>
 
 **[clinic-db]** In this project, we utilize a relational database to construct the primary data framework for a clinic database. Our approach involves designing a table to house data pertaining to patients.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> This project is built with PostgreSQL database see info below:
 
 <details>
 <summary>Database</summary>
@@ -79,18 +49,14 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> The following are the key features of the Project.
-
 - **[The project has a database of a clinic]**
-- **[The database comprises tables that include medical_history, patients, treatments, invoices, and invoice_items ]**
+- **[The database comprises tables that include medical_history, patients, treatments, invoices and invoice_items]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Follow below to get started with the project.
 
 To get a local copy up and running, follow these steps.
 
@@ -102,7 +68,7 @@ In order to run this project you need:
 Example command:
 
 ```sh
- gem install rails
+ postgresql
 ```
  -->
 
@@ -115,20 +81,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:mudasiri/Vet-Clinic.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+  git clone https://github.com/Amen-Musingarimi/clinic-db.git
 ```
 --->
 
@@ -140,33 +93,9 @@ To run the project, execute the following command:
 Example command:
 
 ```sh
-  rails server
+  /c clinic-db
 ```
 --->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,11 +123,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Database_Table_Optimization]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[populate_tables_with data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,7 +142,7 @@ Feel free to check the [issues page](https://github.com/Amen-Musingarimi/clinic-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project support me send me a mail : muda@nonihub.org
+If you like this project, please give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -246,6 +172,6 @@ I would like to thank microverse for the opportunity to learn Postgresql
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
