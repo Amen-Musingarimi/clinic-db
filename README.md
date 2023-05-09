@@ -32,15 +32,11 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [clinic-db] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[clinic-db]** In this project, we utilize a relational database to construct the primary data framework for a clinic database. Our approach involves designing a table to house data pertaining to patients.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> This project is built with PostgreSQL database see info below:
 
 <details>
 <summary>Database</summary>
@@ -53,8 +49,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> The following are the key features of the Project.
-
 - **[The project has a database of a clinic]**
 - **[The database comprises tables that include medical_history, patients, treatments, invoices, and invoice_items ]**
 
@@ -63,8 +57,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Follow below to get started with the project.
 
 To get a local copy up and running, follow these steps.
 
@@ -153,7 +145,7 @@ Feel free to check the [issues page](https://github.com/Amen-Musingarimi/clinic-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project support me send me a mail : muda@nonihub.org
+If you like this project, please give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,6 +175,6 @@ I would like to thank microverse for the opportunity to learn Postgresql
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
