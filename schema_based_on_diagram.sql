@@ -54,4 +54,4 @@ CREATE TABLE invoice_items (
 );
 
 CREATE INDEX ON invoice_items(invoice_id);
-CREATE INDEX ON invoices(treatment_id);
+CREATE INDEX ON invoice_items(treatment_id);
